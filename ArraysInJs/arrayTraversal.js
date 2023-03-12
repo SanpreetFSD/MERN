@@ -15,6 +15,17 @@
 
 var myFriends = ['Ramesh', 'Suresh', 'Naresh', 'Ganesh'];
 
-for (var i=0; i<myFriends.length; i++){
-    console.log(myFriends[i]);
-}
+// for (var i=0; i<myFriends.length; i++){
+//     console.log(myFriends[i]);
+// }
+
+/*
+myFriends.forEach(function(element, index, array){
+    console.log(element + " index : " + index + " " + array);  // traditional function
+});*/
+
+myFriends.forEach((element, index, array) =>{
+    console.log(element + " index : " + index + " " + array);  // this is fat arrow function
+});
+
+// fat arrow function doesnot support "this argument", traditional function supports "this argument"
