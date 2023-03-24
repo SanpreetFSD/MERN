@@ -18,6 +18,6 @@ let arr2 = arr.map((currElm) =>{
     return currElm * 2;
 }).filter((currElm)=> {
     return currElm >10;
-})
+})   // chaining effect/style
 
 console.log(arr2);
